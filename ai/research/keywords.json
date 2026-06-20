@@ -1,0 +1,80 @@
+{
+  "_note": "Keyword map for dairy-insurance.com. Volumes/CPC/difficulty are directional estimates synthesized from public SERP/competitor data. Intent: C=commercial, T=transactional, I=informational.",
+  "pillar_topics": [
+    "dairy farm insurance",
+    "dairy insurance",
+    "dairy cattle insurance"
+  ],
+  "groups": {
+    "livestock-mortality": {
+      "keywords": [
+        { "kw": "dairy cattle insurance", "vol": "med", "cpc": "high", "diff": "med", "intent": "C/T" },
+        { "kw": "livestock mortality insurance", "vol": "med", "cpc": "high", "diff": "med", "intent": "C/T" },
+        { "kw": "dairy cow mortality coverage", "vol": "low", "cpc": "med", "diff": "low", "intent": "T" },
+        { "kw": "cattle death loss insurance", "vol": "low", "cpc": "med", "diff": "low", "intent": "I/C" },
+        { "kw": "registered cattle insurance", "vol": "very low", "cpc": "high", "diff": "low", "intent": "T" }
+      ]
+    },
+    "farm-property": {
+      "keywords": [
+        { "kw": "dairy farm property insurance", "vol": "low-med", "cpc": "med", "diff": "low", "intent": "C/T" },
+        { "kw": "dairy barn insurance", "vol": "low", "cpc": "med", "diff": "low", "intent": "C" },
+        { "kw": "milking parlor coverage", "vol": "very low", "cpc": "med", "diff": "low", "intent": "C" },
+        { "kw": "farm building insurance dairy", "vol": "low", "cpc": "med", "diff": "low", "intent": "C" }
+      ]
+    },
+    "equipment-spoilage": {
+      "keywords": [
+        { "kw": "dairy equipment breakdown insurance", "vol": "low", "cpc": "med", "diff": "low", "intent": "C" },
+        { "kw": "milk spoilage insurance", "vol": "very low", "cpc": "high", "diff": "low", "intent": "T" },
+        { "kw": "bulk tank insurance", "vol": "very low", "cpc": "med", "diff": "low", "intent": "C" },
+        { "kw": "chiller breakdown dairy coverage", "vol": "very low", "cpc": "med", "diff": "low", "intent": "C" }
+      ]
+    },
+    "dairy-product-liability": {
+      "keywords": [
+        { "kw": "dairy product liability insurance", "vol": "low", "cpc": "high", "diff": "med", "intent": "C/T" },
+        { "kw": "milk contamination insurance", "vol": "very low", "cpc": "high", "diff": "low", "intent": "C" },
+        { "kw": "dairy recall coverage", "vol": "very low", "cpc": "high", "diff": "low", "intent": "C" },
+        { "kw": "food liability dairy farm", "vol": "very low", "cpc": "med", "diff": "low", "intent": "I/C" }
+      ]
+    },
+    "pollution-environmental": {
+      "keywords": [
+        { "kw": "dairy pollution liability insurance", "vol": "low", "cpc": "high", "diff": "med", "intent": "C/T" },
+        { "kw": "manure runoff insurance", "vol": "very low", "cpc": "high", "diff": "low", "intent": "C" },
+        { "kw": "farm environmental liability", "vol": "low", "cpc": "high", "diff": "med", "intent": "C" }
+      ]
+    },
+    "workers-compensation": {
+      "keywords": [
+        { "kw": "dairy workers compensation", "vol": "low-med", "cpc": "high", "diff": "med", "intent": "C/T" },
+        { "kw": "farm workers comp dairy", "vol": "low", "cpc": "high", "diff": "med", "intent": "C" },
+        { "kw": "agricultural workers comp", "vol": "med", "cpc": "high", "diff": "med", "intent": "C/T" }
+      ]
+    },
+    "commercial-auto": {
+      "keywords": [
+        { "kw": "dairy commercial auto", "vol": "low", "cpc": "med", "diff": "low", "intent": "C" },
+        { "kw": "milk tanker insurance", "vol": "very low", "cpc": "med", "diff": "low", "intent": "C" },
+        { "kw": "feed truck insurance", "vol": "very low", "cpc": "med", "diff": "low", "intent": "C" }
+      ]
+    },
+    "general-liability": {
+      "keywords": [
+        { "kw": "dairy farm general liability", "vol": "low", "cpc": "med", "diff": "low", "intent": "C/T" },
+        { "kw": "agritourism insurance farm", "vol": "low-med", "cpc": "med", "diff": "med", "intent": "C" }
+      ]
+    }
+  },
+  "paa": [
+    "Does farm insurance cover dairy cattle death?",
+    "Is milk spoilage covered if my bulk tank fails?",
+    "Does dairy insurance cover manure runoff?",
+    "Do I need workers comp for dairy employees?",
+    "How much does dairy farm insurance cost?",
+    "What is livestock mortality insurance?",
+    "Are milk tankers covered under farm auto or commercial auto?",
+    "Does dairy insurance cover agri-tourism and farm tours?"
+  ]
+}

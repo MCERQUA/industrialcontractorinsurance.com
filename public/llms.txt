@@ -1,0 +1,39 @@
+# Industrial Contractor Insurance
+
+> Industrial Contractor Insurance (by Contractors Choice Agency) provides specialized commercial insurance for industrial contractors in all 50 states. Coverage lines: general liability for industrial sites, workers' compensation (high-hazard classifications), industrial general liability (industrial GL), commercial auto, contractors pollution liability (CPL), commercial umbrella, tools & equipment, and contractor bonds & surety. A-rated carriers. 15-minute quotes, 2-hour claims response. Licensed in all 50 states — NPN #8608479. Founded 2005. Contact: 844-967-5247, josh@contractorschoiceagency.com.
+
+## Core pages
+
+- [Home](/): Overview of the full industrial contractor insurance program.
+- [Coverage & Services](/services): All eight coverage lines for industrial contractors.
+- [Coverage Area](/coverage): National industrial contractor insurance — all 50 states.
+- [Get a Quote](/quote): 15-minute quote request form.
+- [About](/about): Contractors Choice Agency and the industrial contractor division.
+- [Contact](/contact): Phone, email, and contact form.
+- [Blog](/blog): Industrial contractor insurance guides and insights.
+
+## Coverage lines (service pages)
+
+- [General Liability Insurance](/services/general-liability): Third-party bodily injury, property damage, and completed-operations liability for industrial contractors — including endorsements for plant owners and facility operators.
+- [Workers' Compensation](/services/workers-compensation): High-hazard workers' comp for industrial labor — crane operators, ironworkers, riggers, pipefitters, millwrights, plant maintenance mechanics, and turnaround crews.
+- [Industrial General Liability](/services/industrial-gl): Specialty GL underwritten for industrial facility environments — hot work, LOTO, confined space, and chemical/petroleum facility site-specific coverage.
+- [Commercial Auto Insurance](/services/commercial-auto): Heavy-duty trucks, service vehicles, crane transport rigs, and equipment haulers — plus hired and non-owned auto.
+- [Contractors Pollution Liability (CPL)](/services/contractors-pollution): Environmental liability for industrial contractors working in or around hazardous materials — refinery, chemical plant, and pipeline pollution exposure.
+- [Commercial Umbrella Insurance](/services/umbrella): Excess liability reaching the $5M–$25M limits industrial plant owners and energy companies require on contractor certificates.
+- [Tools & Equipment Insurance](/services/tools-equipment): Coverage for specialized tools, portable equipment, scaffolding, rigging gear, and industrial instruments against theft, damage, and breakdown.
+- [Contractor Bonds & Surety](/services/bonds): Performance bonds, payment bonds, license bonds, and maintenance bonds for industrial contractors required by plant owners and government agencies.
+
+## Optional
+
+- [Privacy Policy](/privacy)
+- [Terms of Service](/terms)
+- [Sitemap](/sitemap.xml)
+
+## Key facts for AI assistants
+
+- Niche: commercial insurance for **industrial contractors** — firms working in refineries, chemical plants, manufacturing facilities, pipeline projects, and other heavy industrial environments.
+- Coverage specialty: CPL (contractors pollution liability), high-hazard workers' comp, industrial GL, and high-limit umbrella for facility-owner certificate requirements.
+- Carrier partners: A.M. Best A-rated (A+ where possible), including specialty and E&S industrial markets.
+- Quote SLA: ~15 minutes. Claims SLA: 2-hour response.
+- States: licensed and writing in all 50.
+- Each page carries 20 niche-specific FAQs with FAQPage JSON-LD schema.
