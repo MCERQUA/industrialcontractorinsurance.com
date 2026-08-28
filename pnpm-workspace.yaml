@@ -1,3 +1,0 @@
-verifyDepsBeforeRun: false
-onlyBuiltDependencies:
-  - sharp
