@@ -25,6 +25,7 @@ export default function QuotePage() {
     priorGrossSales: "", priorSubcontractorExpenses: "", priorEmployeeCount: "", priorEmployeePayroll: "",
     estGrossSales: "", estSubcontractorExpenses: "", estEmployeeCount: "", estEmployeePayroll: "", estMaterialCosts: "",
     subsHaveInsurance: "", subsInsuredPercent: "", needUninsuredSubCoverage: "",
+    coverage_types: "", year_business_started: "", business_description: "", class_code_1: "", class_code_2: "", class_code_3: "", class_code_4: "", class_code_5: "", residential_vs_commercial: "", new_vs_existing_construction: "", largest_projects: "", prior_carrier_name: "", prior_policy_number: "", prior_policy_expiration: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -195,7 +196,72 @@ export default function QuotePage() {
                         {submitting ? "Sending…" : "Request my free quote"}{!submitting && <ArrowRight className="h-5 w-5" />}
                       </button>
                       <p className="text-xs text-center text-mocha/70">No spam. No commitment. We'll only contact you about your quote.</p>
-                    </form>
+                    
+        {/* complete contractor field set — forms-required-fields.json */}
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Coverages requested (checkboxes)</label>
+          <div className="flex flex-wrap pt-1">
+            <label className="inline-flex items-center gap-2 mr-4 mb-1"><input type="checkbox" name="coverage_types" value="General liability" onChange={(e) => { const cur = (formData.coverage_types || "").split(", ").filter(Boolean); const next = e.target.checked ? [...cur, e.target.value] : cur.filter((v) => v !== e.target.value); setFormData({ ...formData, coverage_types: next.join(", ") }); }} /><span className="text-sm">General liability</span></label>
+            <label className="inline-flex items-center gap-2 mr-4 mb-1"><input type="checkbox" name="coverage_types" value="Commercial auto" onChange={(e) => { const cur = (formData.coverage_types || "").split(", ").filter(Boolean); const next = e.target.checked ? [...cur, e.target.value] : cur.filter((v) => v !== e.target.value); setFormData({ ...formData, coverage_types: next.join(", ") }); }} /><span className="text-sm">Commercial auto</span></label>
+            <label className="inline-flex items-center gap-2 mr-4 mb-1"><input type="checkbox" name="coverage_types" value="Workers compensation" onChange={(e) => { const cur = (formData.coverage_types || "").split(", ").filter(Boolean); const next = e.target.checked ? [...cur, e.target.value] : cur.filter((v) => v !== e.target.value); setFormData({ ...formData, coverage_types: next.join(", ") }); }} /><span className="text-sm">Workers compensation</span></label>
+            <label className="inline-flex items-center gap-2 mr-4 mb-1"><input type="checkbox" name="coverage_types" value="Umbrella / excess" onChange={(e) => { const cur = (formData.coverage_types || "").split(", ").filter(Boolean); const next = e.target.checked ? [...cur, e.target.value] : cur.filter((v) => v !== e.target.value); setFormData({ ...formData, coverage_types: next.join(", ") }); }} /><span className="text-sm">Umbrella / excess</span></label>
+            <label className="inline-flex items-center gap-2 mr-4 mb-1"><input type="checkbox" name="coverage_types" value="Pollution liability" onChange={(e) => { const cur = (formData.coverage_types || "").split(", ").filter(Boolean); const next = e.target.checked ? [...cur, e.target.value] : cur.filter((v) => v !== e.target.value); setFormData({ ...formData, coverage_types: next.join(", ") }); }} /><span className="text-sm">Pollution liability</span></label>
+            <label className="inline-flex items-center gap-2 mr-4 mb-1"><input type="checkbox" name="coverage_types" value="Professional liability" onChange={(e) => { const cur = (formData.coverage_types || "").split(", ").filter(Boolean); const next = e.target.checked ? [...cur, e.target.value] : cur.filter((v) => v !== e.target.value); setFormData({ ...formData, coverage_types: next.join(", ") }); }} /><span className="text-sm">Professional liability</span></label>
+          </div>
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Year business started</label>
+          <input type="number" name="year_business_started" value={formData.year_business_started} onChange={(e) => setFormData({ ...formData, year_business_started: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Description of business</label>
+          <textarea name="business_description" rows={3} value={formData.business_description} onChange={(e) => setFormData({ ...formData, business_description: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Class code 1 (+ % of operations)</label>
+          <input type="text" name="class_code_1" value={formData.class_code_1} onChange={(e) => setFormData({ ...formData, class_code_1: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Class code 2 (+ % of operations)</label>
+          <input type="text" name="class_code_2" value={formData.class_code_2} onChange={(e) => setFormData({ ...formData, class_code_2: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Class code 3 (+ % of operations)</label>
+          <input type="text" name="class_code_3" value={formData.class_code_3} onChange={(e) => setFormData({ ...formData, class_code_3: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Class code 4 (+ % of operations)</label>
+          <input type="text" name="class_code_4" value={formData.class_code_4} onChange={(e) => setFormData({ ...formData, class_code_4: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Class code 5 (+ % of operations)</label>
+          <input type="text" name="class_code_5" value={formData.class_code_5} onChange={(e) => setFormData({ ...formData, class_code_5: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Residential vs commercial split</label>
+          <input type="text" name="residential_vs_commercial" value={formData.residential_vs_commercial} onChange={(e) => setFormData({ ...formData, residential_vs_commercial: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">New construction vs existing / remodel</label>
+          <input type="text" name="new_vs_existing_construction" value={formData.new_vs_existing_construction} onChange={(e) => setFormData({ ...formData, new_vs_existing_construction: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">5 largest projects ever (description + dollar amount)</label>
+          <textarea name="largest_projects" rows={3} value={formData.largest_projects} onChange={(e) => setFormData({ ...formData, largest_projects: e.target.value })} placeholder="Description and dollar amount for each" className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Prior insurance carrier name</label>
+          <input type="text" name="prior_carrier_name" value={formData.prior_carrier_name} onChange={(e) => setFormData({ ...formData, prior_carrier_name: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Prior policy number</label>
+          <input type="text" name="prior_policy_number" value={formData.prior_policy_number} onChange={(e) => setFormData({ ...formData, prior_policy_number: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+        <div>
+          <label className="block text-sm font-bold mb-1.5">Prior policy expiration date</label>
+          <input type="date" name="prior_policy_expiration" value={formData.prior_policy_expiration} onChange={(e) => setFormData({ ...formData, prior_policy_expiration: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
+        </div>
+</form>
                   </FadeIn>
                 )}
               </div>
