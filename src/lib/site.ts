@@ -168,26 +168,6 @@ export const STATS: { value: number; suffix: string; label: string; prefix?: str
 /* ============================================================
    TESTIMONIALS
    ============================================================ */
-export const TESTIMONIALS: { quote: string; name: string; role: string; location: string }[] = [
-  {
-    quote: "We work in refineries all over the Gulf Coast. Most agents couldn't get us the CPL limits the plant owners required. CCA found markets that understood the exposure and got us proper coverage in days.",
-    name: "Ray T.",
-    role: "Operations Manager, Industrial Maintenance Contractor",
-    location: "Beaumont, TX",
-  },
-  {
-    quote: "Our crews work in chemical plants — the GL exposure is completely different from commercial construction. Josh understood what we needed and built a program that actually covers our work.",
-    name: "Karen M.",
-    role: "Owner, Plant Maintenance Services",
-    location: "Baton Rouge, LA",
-  },
-  {
-    quote: "After getting declined twice over our OSHA history, we brought our situation to CCA. They placed us with an E&S market that understood industrial hazard work. Claims response has been excellent.",
-    name: "Derek P.",
-    role: "President, Industrial Service Contractors",
-    location: "Pittsburgh, PA",
-  },
-];
 
 /* ============================================================
    CREDENTIALS (for TrustBar, About, etc.)

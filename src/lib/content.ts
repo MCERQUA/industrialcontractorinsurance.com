@@ -51,11 +51,6 @@ export const COPY = {
   process: {
     lead: "No two-week back-and-forth. A real conversation, real industrial markets, and a program you can actually understand — built around your site exposure and crew classification.",
   },
-  testimonials: {
-    eyebrow: "From industrial contractors",
-    h2Lead: "Contractors that found",
-    h2Highlight: "coverage that holds up on the job site",
-  },
   finalCta: {
     h2Lead: "Protect Your Industrial Contracting Firm",
     h2Highlight: "with coverage built for heavy-hazard work.",
