@@ -30,10 +30,10 @@ export default function ContactPage() {
       try {
         const res = await fetch(WEBHOOK_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ form_name: "contact", source: SITE.domain, ...formData }) });
         // The webhook answers 200 with stored:false when it did not store the lead.
-        if (res.ok) { const j = await res.json().catch(() => null); stored = !j || j.stored !== false; }
+        if (res.ok) { const j = await res.json().catch(() => null); stored = !!(j && j.ok === true && j.stored !== false); }
       } catch { /* fall through to Netlify Forms */ }
       if (!stored) {
-        const fb = await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams({ "form-name": "contact", ...formData }).toString() });
+        const fb = await fetch("/__forms.html", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams({ "form-name": "contact", ...formData }).toString() });
         if (!fb.ok) throw new Error(String(fb.status));
       }
       setSubmitted(true);
