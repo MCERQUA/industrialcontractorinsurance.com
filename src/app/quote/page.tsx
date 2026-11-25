@@ -6,6 +6,7 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SITE } from "@/lib/site";
+import { QuoteForm as AcordQuoteForm } from "@/components/quote/QuoteForm";
 import { US_STATES, QUOTE_SERVICE_TYPES, YEARS_OPTIONS, COPY } from "@/lib/content";
 import { CheckCircle2, ShieldCheck, ArrowRight, Phone, Clock, Zap, MapPin } from "lucide-react";
 
@@ -269,6 +270,27 @@ export default function QuotePage() {
 </form>
                   </FadeIn>
                 )}
+
+                <FadeIn>
+                  <div id="business-application" className="mt-10 rounded-3xl bg-white border border-adobe shadow-card p-7 md:p-9">
+                    <h2 className="font-heading font-extrabold text-espresso text-2xl mb-2">Industrial contractors: full commercial application</h2>
+                    <p className="text-sm text-mocha mb-8">Answer the carrier underwriting questions here and we can quote general liability and related industrial contractor coverage without a second round of paperwork.</p>
+                    <AcordQuoteForm
+                      formName="quote"
+                      tradeName="Industrial contractors"
+                      endpoint="/__forms.html"
+                      options={{ yn: true, feinRequired: false }}
+                      defaults={{ coverageTypes: "General Liability" }}
+                      classes={{
+                        input: "w-full px-4 py-3 rounded-xl border border-adobe bg-cream/50 text-espresso placeholder-mocha/60 focus:outline-none focus:border-clay focus:ring-2 focus:ring-clay/20 transition-all text-sm",
+                        label: "block text-sm font-heading font-semibold text-espresso mb-1.5",
+                        legend: "block text-sm font-heading font-semibold text-espresso mb-1.5",
+                        heading: "font-heading font-extrabold text-espresso text-xl",
+                        button: "px-8 py-4 bg-clay-gradient text-white font-heading font-bold rounded-full shadow-warm disabled:opacity-40 disabled:cursor-not-allowed",
+                      }}
+                    />
+                  </div>
+                </FadeIn>
               </div>
             </div>
           </div>
